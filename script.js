@@ -98,3 +98,21 @@ function reStartGame() {
   startGame()
   
 }
+
+// setting up the scoreboard
+
+const playerOneId = document.getElementById('playerOneButton')
+const playerTwoId = document.getElementById('playerTwoButton')
+
+
+
+  playerOneId.addEventListener('click', handlePOne)
+  playerTwoId.addEventListener('click', handlePTwo)
+
+  function handlePOne() {
+    console.log('playerone')
+  }
+
+  function handlePTwo() {
+    console.log('playertwo')
+  }

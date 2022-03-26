@@ -144,3 +144,10 @@ body {
 .winning-message.show {
   display: flex;
 }
+
+
+/* This is the user input and scoreboard styling */
+
+.userInputs {
+  padding: 25px 25px 0px 25px;
+}
