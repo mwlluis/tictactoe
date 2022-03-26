@@ -101,18 +101,26 @@ function reStartGame() {
 
 // setting up the scoreboard
 
-const playerOneId = document.getElementById('playerOneButton')
-const playerTwoId = document.getElementById('playerTwoButton')
+document.getElementById('playerOneButton').onclick = function() {
+  var playerOneId = document.getElementById('playerOne').value
+  console.log(playerOneId)
+  document.getElementById('playerOne').value = ''
+}
+document.getElementById('playerTwoButton').onclick = function() {
+  var playerTwoId = document.getElementById('playerTwo').value
+  console.log(playerTwoId)
+  document.getElementById('playerTwo').value = ''
+}
 
 
 
-  playerOneId.addEventListener('click', handlePOne)
-  playerTwoId.addEventListener('click', handlePTwo)
+  // playerOneId.addEventListener('click', handlePOne, { once: true })
+  // playerTwoId.addEventListener('click', handlePTwo, {once: true })
 
-  function handlePOne() {
-    console.log('playerone')
-  }
+  // function handlePOne() {
+  //   console.log('playerone')
+  // }
 
-  function handlePTwo() {
-    console.log('playertwo')
-  }
+  // function handlePTwo() {
+  //   console.log('playertwo')
+  // }
